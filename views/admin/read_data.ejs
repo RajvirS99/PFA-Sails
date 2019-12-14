@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+td{
+    padding: 10px;
+}
+</style>
+
+<div class="container">
+    <h2>New Registrations</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Student Name</th>
+            <th>Department</th>
+            <th>Roll No</th>
+            <th>Phone Number</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% data.forEach(function(article){ %>
+        <tr>
+           <td><%= article.id %></td>
+           <td><%= article.Student_name %></td>
+           <td><%= article.Department %></td>
+           <td><%= article.roll_no %></td>
+           <td><%= article.phone_number %></td>
+           <td><%= article.body %></td>
+
+
+           <td>
+               <form method="post" action="/admin/delete">
+                <input type="submit" value="Delete" class="btn btn-danger"/>
+            </form>
+           </td>
+
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
+</div>

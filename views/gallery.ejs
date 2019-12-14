@@ -1,0 +1,167 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin:0%;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .header {
+      text-align: center;
+      padding:0% 2%;
+      }
+    
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin:0% 3% 4% 3%;
+      padding: 0 4px;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 4px 4px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media (max-width: 500px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media (max-width: 500px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    </style>
+ 
+<header id="header" style="background-color:black;opacity:0.9">
+    <div class="inner">
+      <a href="index.html" class="logo">PFA</a>
+      <nav id="nav">
+        <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/events">Events</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+
+
+
+
+<!-- Header -->
+<div class="header">
+<p style="font-size:3em; margin: 1%;color:#ee2e31;">Exhibition Room</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+
+<div class="column">
+<img data-toggle="modal" data-target="#myModal" src="images/p1.jpg" onclick="show_details(this);" style="width:100%" data-box="1">
+<img data-toggle="modal" data-target="#myModal" src="images/p8.jpg" onclick="show_details(this);" style="width:100%" data-box="8">
+<img data-toggle="modal" data-target="#myModal" src="images/p2.jpg" onclick="show_details(this);" style="width:100%" data-box="2">
+
+</div>
+
+<div class="column">
+<img data-toggle="modal" data-target="#myModal" src="images/p10.jpg" onclick="show_details(this);" style="width:100%" data-box="10">
+<img data-toggle="modal" data-target="#myModal" src="images/p7.jpg" onclick="show_details(this);" style="width:100%" data-box="7">
+<img data-toggle="modal" data-target="#myModal" src="images/p3.jpg" onclick="show_details(this);" style="width:100%" data-box="3">
+<img data-toggle="modal" data-target="#myModal" src="images/p17.jpg" onclick="show_details(this);" style="width:100%" data-box="17">
+</div> 
+
+<div class="column">
+<img data-toggle="modal" data-target="#myModal" src="images/p5.jpg" onclick="show_details(this);" style="width:100%" data-box="5">
+<img data-toggle="modal" data-target="#myModal" src="images/p6.jpg" onclick="show_details(this);" style="width:100%" data-box="6">
+<img data-toggle="modal" data-target="#myModal" src="images/p16.jpg" onclick="show_details(this);" style="width:100%" data-box="16">    
+</div>
+
+<div class="column">
+<img data-toggle="modal" data-target="#myModal" src="images/p10.jpg" onclick="show_details(this);" style="width:100%" data-box="10">
+<img data-toggle="modal" data-target="#myModal" src="images/p13.jpg" onclick="show_details(this);" style="width:100%" data-box="13">
+<img data-toggle="modal" data-target="#myModal" src="images/p14.jpg" onclick="show_details(this);" style="width:100%" data-box="14">
+<img data-toggle="modal" data-target="#myModal" src="images/p11.jpg" onclick="show_details(this);" style="width:100%" data-box="11">
+</div>
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-body">
+       <img id="setImage" data-dismiss="modal" style="width:100%" >   
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<section id="footer">
+    <div class="inner">
+      <header>
+        <h2 style="text-align: center">Contact Details</h2>
+      </header>
+      
+      <div class="copyright">
+
+        <div class="content" style="text-align: auto">
+          <p>Society Head: Varmeet Singh<br>
+            Phone No.: 9988776655<br>
+          Email id: varmeetsingh@gmail.com</p>
+        </div>
+        <ul class="actions" style="text-align: center">
+        <li><a href="#" class="reg">Register as a member</a></li>
+      </ul>
+
+
+        <ul class="icons" style="text-align:center;font-size:200%">       
+        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>     
+        </ul>
+        &copy; Photography & Fine Arts Club
+      </div>
+    </div>
+  </section>
+
+
+  
+<script type="text/javascript">
+    function show_details(image_name){
+      var details = image_name.getAttribute("data-box");
+      var name = "images/p" + details + ".jpg";
+      console.log(name);
+      document.getElementById("setImage").src = name;
+    }
+  </script>
+  
