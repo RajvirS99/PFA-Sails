@@ -13,12 +13,12 @@
  + You can check how to install SailsJs from the https://sailsjs.com/get-started and Read the tutorials about how to use it from https://sailsjs.com/documentation/concepts
  + Install the MongoDB from https://www.mongodb.com/download-center/community and install the Community Server Version or you can Buy the Enterprise Server (Depending on your usage).
  
- + Use the "git clone 'repository link' " Command to clone the Repository in your system.
+ + Use the "git clone 'repository link' " Command to clone the repository in your system.
  + Now use the command "npm install" in your system to install the package Dependencies.
- + Open the Project on your favourite text editor to edit it (Mine in Visual Studio Code).
+ + Open the Project on your favourite text editor to edit it (Mine is Visual Studio Code).
  + Now you can open the Server by using the command "sails lift".
  
- ###### Congratulations! Your Server is live and now you can open the project on the address "Localhost:1337".
+ ###### Congratulations! Your Server is live and now you can open the project on the address "localhost:1337".
  
  ##### You can also use nodemon package as it automatically refreshes the page after we edit and save the project, link is below.
  https://www.npmjs.com/package/nodemon
