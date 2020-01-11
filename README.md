@@ -1,7 +1,6 @@
 # A Web Application made for a Community (Photography and Fine Arts) in a college.
 ## A Sails v1 Web App
 
-#### Steps to install the project
  ##### You Should be having NodeJs and Npm Installed in your System
  ##### If you don't have Git then you install it from https://git-scm.com/downloads
  If you are the First User in GIT then you need the configure by using 
@@ -13,6 +12,7 @@
  + You can check how to install SailsJs from the https://sailsjs.com/get-started and Read the tutorials about how to use it from https://sailsjs.com/documentation/concepts
  + Install the MongoDB from https://www.mongodb.com/download-center/community and install the Community Server Version or you can Buy the Enterprise Server (Depending on your usage).
  
+ #### Steps to install the project
  + Use the "git clone 'repository link' " Command to clone the repository in your system.
  + Now use the command "npm install" in your system to install the package Dependencies.
  + Open the Project on your favourite text editor to edit it (Mine is Visual Studio Code).
